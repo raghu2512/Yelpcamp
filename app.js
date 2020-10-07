@@ -18,7 +18,7 @@ var indexRoutes = require("./routes/index");
 
 //seedDB(); //seed the database
 //mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/yelp_camp", {
+mongoose.connect("mongodb://localhost:27017/yelp_camp?authSource=admin", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
